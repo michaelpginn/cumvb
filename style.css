@@ -1,0 +1,164 @@
+:root {
+    --primary: rgb(207, 184, 124);
+    --primary-lighter: rgb(210, 190, 130);
+    --secondary: #0a3758;
+    --border-radius: 4px;
+    --light-bg: #f3f0e9;
+    --slightly-darker-light-bg: #eae5d9;
+    --text: black;
+    --bg: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #5e94c6;
+        --text: #fff;
+        --bg: #121212;
+        --light-bg: rgb(20, 25, 25);
+        --slightly-darker-light-bg: rgb(25, 30, 30);
+    }
+}
+
+html {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+a {
+    color: #0277bd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h1 {
+    margin-block-end: 12px;
+}
+
+h2 {
+    margin-block-start: 1.5em;
+    margin-block-end: 0.5em;
+}
+
+h3 {
+    margin-block-start: 1.5em;
+    margin-block-end: 0em;
+}
+
+.anchor-link {
+    margin-left: 4px;
+    font-size: smaller;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+li {
+    line-height: 1.4em;
+    /* list-style-type: none; */
+}
+
+li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    margin-block-start: -1em;
+    margin-block-end: 22px;
+}
+
+footer {
+    margin-block-start: 100px;
+    padding-block: 20px;
+    color: #aaa;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 12px;
+    gap: 20px;
+}
+nav a {
+    font-size: small;
+    color: black;
+}
+
+#donate-links {
+    display: flex;
+    gap: 20px;
+}
+
+#donate-links a {
+    color: black;
+    background-color: var(--slightly-darker-light-bg);
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: var(--border-radius);
+    box-shadow:
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#donate-links a:hover {
+    background-color: var(--light-bg);
+}
+
+#donate-links a div {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    padding-inline: 12px;
+}
+
+#main {
+    width: 100%;
+    float: right;
+    height: auto;
+    margin: 0 0 20px 20px;
+    /*border-radius: var(--border-radius);*/
+}
+
+#culogo {
+    max-width: 240px;
+}
+
+.roster-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-block-end: 20px;
+}
+
+.roster-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: var(--border-radius);
+}
+
+.roster-name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.roster-detail {
+    font-style: italic;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #main {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
