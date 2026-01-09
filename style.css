@@ -14,8 +14,8 @@
         --primary: #5e94c6;
         --text: #fff;
         --bg: #121212;
-        --light-bg: rgb(20, 25, 25);
-        --slightly-darker-light-bg: rgb(25, 30, 30);
+        --light-bg: #f3f0e9;
+        --slightly-darker-light-bg: #eae5d9;
     }
 }
 
@@ -83,7 +83,7 @@ nav {
 }
 nav a {
     font-size: small;
-    color: black;
+    color: var(--text);
 }
 
 #donate-links {
